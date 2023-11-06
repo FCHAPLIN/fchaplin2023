@@ -18,10 +18,24 @@ import Services from '@components/Services';
 import Skills from '@components/Skills';
 import Contact from '@components/Contact';
 import Rates from '@components/Rates';
+import { useEffect } from 'react';
 
 export default function Index({locale}) {
   const t = useTranslations('home');
-
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      console.log(anchor.getAttribute('href'))
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetElement = document.querySelector(this.getAttribute('href'))
+          console.log('targetElement', targetElement)
+          targetElement.scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+}, []);
+  
+});
   return (
     <div className="container">
       <Head>

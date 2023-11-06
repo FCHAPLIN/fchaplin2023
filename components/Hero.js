@@ -23,6 +23,7 @@ const Hero = () => {
     }
 
     return (
+      <>
         <section id="top" className="hero">
             <div className="hero_container">
                 <div className="hero_image-container">
@@ -361,6 +362,8 @@ const Hero = () => {
             </Link>
             <div className="anchor" id="services"></div>
         </section>
+        
+        </>
     )
 }
 

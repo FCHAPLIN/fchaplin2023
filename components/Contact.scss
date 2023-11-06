@@ -1,6 +1,15 @@
 @import "../styles/variables";
 
 .contact{
+  h2 {
+    margin-top: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
   padding: 30px 20px 50PX;
   background: $accent;
   color: $white;

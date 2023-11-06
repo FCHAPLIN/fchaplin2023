@@ -16,6 +16,7 @@
   padding-right: 2rem;
   background: transparent;
   background: radial-gradient(circle, transparent 0%, darken($accent3, 10%) 80%);
+  
   .particles {
     position: absolute;
     top: 0;
@@ -98,6 +99,10 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: normal;
+  }
+  .anchor{
+    position: absolute;
+    bottom: 50px;
   }
 }
 @keyframes arrowBounce {

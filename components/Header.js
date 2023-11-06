@@ -22,14 +22,11 @@ export default function Header({ title, locale }) {
 
   return (
     <header className="header">
-      <div className="logo-container">
-          <div role="button" tabIndex={0}
-               onClick={() => scrollTo('#top')}
-               onKeyDown={() => scrollTo('#top')}
-               className="header_logo" title="Top">
+      <Link className="logo-container" href="#top">
+          <div className="header_logo" title="Top">
             <img src="/img/logo.png" width="50" height="50" alt="logo"></img>
           </div >
-      </div>
+      </Link>
       <div className="header_container">
         <div className="header_menu">
           <Link className="header_link" href="#services"
