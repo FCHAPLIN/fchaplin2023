@@ -1,0 +1,27 @@
+@import "../styles/variables";
+
+.rates{
+  padding: 30px 20px 50PX;
+  background: $accent;
+  color: white;
+  h3{
+    text-align: center;
+    margin: 0;
+  }
+  .value{
+    margin: 0;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  &_text{
+    width: 100%;
+    max-width: 960px;
+    margin: .5rem auto;
+    text-align: justify;
+    &--big{
+      text-align: center;
+      font-size: 1.4rem;
+    }
+  }
+}

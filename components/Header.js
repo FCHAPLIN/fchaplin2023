@@ -1,3 +1,83 @@
-export default function Header({ title }) {
-  return <h1 className="title">{title}</h1>
+import React, { useCallback, useState } from "react"
+import "./Header.scss"
+import "../styles/global.scss"
+import {useTranslations} from 'next-intl';
+import Link from "next/link";
+import LanguageMenu from "./LanguageMenu";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { useParams } from "next/navigation";
+import cvfr from './../public/docs/CV_Frederic_CHAPLIN_JS_2023.pdf';
+import cven from './../public/docs/CV_Frederic_CHAPLIN_JS_2023.pdf';
+
+
+export default function Header({ title, locale }) {
+  const [showMenu, setShowMenu] = useState(false)
+  const t = useTranslations();
+  const params = useParams()
+  const getCV = useCallback(() => {
+    const lang = params.locale;
+    return lang === 'fr' ? cvfr : cven;
+  }, [params.locale])
+
+  return (
+    <header className="header">
+      <div className="logo-container">
+          <div role="button" tabIndex={0}
+               onClick={() => scrollTo('#top')}
+               onKeyDown={() => scrollTo('#top')}
+               className="header_logo" title="Top">
+            <img src="/img/logo.png" width="50" height="50" alt="logo"></img>
+          </div >
+      </div>
+      <div className="header_container">
+        <div className="header_menu">
+          <Link className="header_link" href="#services"
+                title={t('nav.services')}>{t('nav.services')}</Link>
+          <Link  className="header_link" href="#rates"
+                title={t('nav.rates')}>{t('nav.rates')}</Link>
+          <Link  className="header_link" href="#skills"
+                title={t('nav.skills')}>{t('nav.skills')}</Link>
+          <Link className="header_link" href="#contact-form"
+                title={t('nav.contact')}>{t('nav.contact')}</Link>
+        </div>
+        <div className="header_lang-menu">
+          <LanguageMenu locale={locale}/>
+        </div>
+        <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact" )}
+                  href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
+
+        <div role="button" tabIndex={0} aria-label="Close" className="header_menu-close-button"
+             onKeyDown={() => setShowMenu(!showMenu)}
+             onClick={() => setShowMenu(!showMenu)}>
+          {showMenu
+            ? <FontAwesomeIcon icon={faTimes}/>
+            : <FontAwesomeIcon icon={faBars}/>
+          }
+        </div>
+        <div className={`header_menu-mobile ${showMenu ? "open" : ""}`}>
+          <div role="button" tabIndex={0} className={"header_menu-mobile-buttons"}
+               onKeyDown={() => setShowMenu(false)}
+               onClick={() => setShowMenu(false)}>
+            <div  className="header_link" role="button" tabIndex={0}
+                  onKeyDown={() => scrollTo('#services')}
+                  onClick={() => scrollTo('#services')}>{t("nav.services")}</div>
+            <div  className="header_link" role="button" tabIndex={0}
+                  onKeyDown={() => scrollTo('#rates')}
+                  onClick={() => scrollTo('#rates')}>{t("nav.rates")}</div>
+            <div  className="header_link" role="button" tabIndex={0}
+                  onKeyDown={() => scrollTo('#skills')}
+                onClick={() => scrollTo('#skills')}>{t("nav.skills")}</div>
+            <div  className="header_link" role="button" tabIndex={0}
+                  onClick={() => scrollTo('#contact-form')}
+                  onKeyDown={() => scrollTo('#contact-form')}>{t("nav.contact")}</div>
+              <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact")}
+                  href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
+    
+          </div>
+        </div>
+      </div>
+      
+    </header>
+  )
 }

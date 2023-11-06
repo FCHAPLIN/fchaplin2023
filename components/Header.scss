@@ -1,0 +1,209 @@
+@import "../styles/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: $black;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+  transform: translate3d(0px, 0px, 0px);
+  #menu-language{
+    z-index: 20;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    padding-left: 1rem;
+    max-width: 200px;
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+
+  &_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    @media screen AND (min-width: 769px) {
+      height: 100%;
+    }
+
+    .header_link {
+      cursor: pointer;
+      text-transform: uppercase;
+
+      text-decoration: none;
+      color: $white;
+      transition-duration: 0.2s;
+      transition-property: color;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  &_menu-open-button {
+    color: white;
+    padding: 0 1rem;
+    font-size: 2rem;
+    @media screen AND (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  &_menu-close-button {
+    color: white;
+    padding: 0 1rem;
+    font-size: 2rem;
+    @media screen AND (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  &_menu {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    @media screen AND (min-width: 769px) {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+    @media screen AND (min-width: 960px) {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+  &_link{
+    padding: 0 2rem;
+    &:last-child{
+      padding-right: 4rem;
+    }
+  }
+
+  &_menu-mobile {
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    bottom: 0;
+    opacity: 0;
+    &.open {
+      left: 0;
+      opacity: 1;
+    }
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    position: fixed;
+    left: 200vw;
+    background-color: $black;
+    width: 100vw;
+    height: calc(100vh - 50px);
+    justify-content: flex-start;
+    align-items: center;
+    @media screen AND (min-width: 769px) {
+      display: none;
+    }
+
+  }
+  &_menu-mobile-buttons{
+      display:flex;
+    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 30%;
+    div{
+      font-size: 1.6rem;
+      padding: 1rem 0;
+    }
+  }
+  .buttons-container {
+    background: #2c3840;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-left: 2rem;
+    width: 200px;
+    h1 {
+      margin: 0;
+    }
+  }
+  &_connect{
+    display:none;
+    color: $white;
+    height: 100%;
+    background: $yellow;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    .connect-button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $yellow;
+      text-transform: uppercase;
+      color: $white;
+      width: 160px;
+      height: 100%;
+      transition-property: background-color, color;
+      &:hover{
+        background-color: $white;
+        color: $black;
+      }
+    }
+    @media screen AND (min-width: 769px) {
+      display: flex;
+    }
+  }
+&_connect-mobile{
+  display:flex;
+  color: $white;
+  width: 80%;
+  background: $yellow;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .connect-button{
+    padding: 1rem;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+  &_lang-menu{
+    color: $white;
+    min-width: 60px;
+    .lang-select{
+      .MuiSvgIcon-root{
+        max-width: 24px;
+      }
+
+    }
+  }
+  &_logo {
+    color: white;
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    img{
+      max-width: 50px;
+    }
+  }
+}

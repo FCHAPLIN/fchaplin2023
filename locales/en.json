@@ -1,0 +1,91 @@
+{
+	"cookies": {
+		"accept": "I accept",
+		"refuse": "No Thanks!",
+		"cookieText": "This website uses cookies for Google Analytics and for Hubspot. They allow me to collect information about your browsing experience and make the contact form work."
+	},
+	"nav": {
+		"top": "Back to top",
+		"services": "Services",
+		"rates": "Rates",
+		"skills": "Skills",
+		"resume": "Resume",
+		"contact": "Contact"
+	},
+	"hero": {
+		"developer": "Lead fullstack web developer freelance",
+		"callText": "Let's chat about your project!"
+	},
+	"skills": {
+		"title": "Skills",
+		"soft": "Soft Skills",
+		"soft-content": "Curiosity, Patience, empathy, adaptability, versatility.",
+		"project":"Project management",
+		"project-content":"Agile, Scrum, Jira...",
+		"tests":"Tests",
+		"tests-content":"Unit and integration tests : Karma, Jest, Jasmine, Cypress.",
+		"git":"Git",
+		"git-content":"Gitlab, GitHub",
+		"cloud":"Cloud",
+		"cloud-content":"AWS, GCP",
+		"bdd":"Databases",
+		"bdd-content":"MongoDB, MySQL/MariaDB, PostGreSQL",
+		"cms":"CMS & eCommerce",
+		"cms-content":"Wordpress, Netlify, Pimcore",
+		"front":"Javascript Front",
+		"front-content":"Angular, React, Vue, Svelte, Gatsby, Vanilla, SCSS, Progressive Web Apps, Electron",
+		"back":"Javascript Back",
+		"back-content":"NodeJS, ExpressJS, NestJS"
+	},
+	"pricings": {
+		"title": "Rates",
+		"tjm": "My daily rate is around ",
+		"text1": "This price is not fixed. Packages, for a website for example, can be offered. Variations may occur depending on the type of project, in the case of team management, depending on the duration and scope of the assignment.",
+		"text2": "The field and the purpose of the project can also influence the price, with possible reductions in favor of ecological, humanitarian or cultural projects.",
+		"text3": "What about starting by a chat about your project?"
+	},
+	"services": {
+		"title": "Services",
+		"text1": "Working on the web for almost 15 years, my experience allows me today to offer my services as a freelance architect and senior developer. Truly fullstack, I can take charge of your project on every layer: from the server-side to the user interface.",
+		"text2": "My main quality is my versatility. I will be able to offer solutions according to your technical environment, your team and your objectives, where others only offer you their environment of comfort. I am able to manage an agile team, while providing rules of good practice and encouraging respect and kindness",
+		"websites": "Websites, blogs, eCommerce",
+		"websites-content": "Blogs, landing pages, business applications, administration console or eCommerce, I can build any types of websites with accessibilty and SEO always in sight. Designs must be provided to me.",
+		"study": "Studies and consulting",
+		"study-content": "I study projects, needs or problems and provide detailed technical reports, modern architecture proposals, roadmaps adapted to your team and environment.",
+		"dev": "Javascript development",
+		"dev-content": "I integrate into your agile team or work in total autonomy. I easily adapt to your technical stack, your processes and your gitflow, while providing my advice on best practices.",
+		"pwa": "Progressive Web Apps",
+		"pwa-content": "I develop your Progressive Web Application, or adapt your existing web application to take advantage of the latest mobile web technologies.",
+		"debt": "Technical Debt",
+		"debt-content": "I carry out an audit of your technical debt, estimate the cost in resources to absorb it and deliver an agile, precise and prioritized roadmap.",
+		"tu": "Unit and integration tests",
+		"tu-content": "\nWant to improve your test coverage? I develop your unit tests after an inventory, and according to your coverage requirements.",
+		"mentoring": "Mentoring",
+		"mentoring-content": "I work in training or internally in your team to guide it towards the best practices adapted to your environment. I can take the role of Scrum Master.",
+		"pipelines": "Pipelines",
+		"pipelines-content": "I set up test, code quality and upload pipelines. I industrialize your web production processes, to make them safer and faster.",
+		"architecture": "Architecture",
+		"architecture-content": "I define a technical stack and plan the architecture of your project according to its specifications. I adapt the proposals to your environment and your team."
+	},
+	"home": {
+		"seoTitle": "Frederic Chaplin, Senior Javascript developer near Montpellier, France",
+		"title": "Home"
+	},
+	"contact": {
+		"seoTitle": "Contact - answers about your formations, onboardings, and animation",
+		"title": "Contact",
+		"invite": "You have questions ? Need help ? We are here !",
+		"send": "Send",
+		"email": "Email",
+		"emailError": "A valid email is required.",
+		"message": "Your message",
+		"messageError": "You did not write any message!",
+		"back": "Back to Home",
+		"thanks" : "Thank you"
+	},
+	"site": {
+		"description": "Freelance Lead / Senior Fullstack Javascript developer near Montpellier (France), I build any website or web application. Contact me to create your architecture, testing, mentoring, PWA, technical debts audits."
+	},
+	"footer": {
+	}
+}

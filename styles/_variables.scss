@@ -1,0 +1,53 @@
+/* Fonts */
+
+$black: #202020;
+$darkgrey: #3F3F3F;
+$lightgrey: #f1f0f0;
+$accent: #055d6d;
+$accent2: #028054;
+$accent3: #335f67;
+$yellow: #e0ead4;
+$white: #f9f9f9;
+$pink: #b10088;
+
+$textfont : 'Lato', sans-serif;
+$titlefont : 'Roboto Condensed', sans-serif;
+
+$font-sans-serif: $textfont;
+$font-serif: $titlefont;
+$font-mono: monospace;
+$font-light: 100;
+$font-normal: 400;
+$font-bold: 700;
+$font-heavy: 800;
+
+/* Breakpoints */
+$xlarge: 1680px;
+$large: 1280px;
+$medium: 980px;
+$small: 740px;
+$xsmall: 480px;
+
+/* Sizes */
+$height: 4rem;
+$margin: 2rem;
+$radius: 0.5rem;
+
+$body-background: $white;
+$cards-background: $lightgrey;
+$font-color-dark: $white;
+$navbar-background: $white;
+$table-background: $accent;
+$sidebar-background: $black;
+$forms-background:$accent;
+$window-background : $white;
+$window-header-background : $darkgrey;
+$window-content-background : $accent;
+
+/* Colours */
+$color-body-font: $white;
+
+$header-height: 60px;
+$slideshow-height-full: calc(100% - #{$header-height});
+$slideshow-height-small: calc(50% - #{$header-height});
+
