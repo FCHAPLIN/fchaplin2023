@@ -8,8 +8,6 @@ const contact =
     cmsContact: {
       formSuccessMessage: "Merci !",
       formErrorMessage: "Un problème est survenu",
-      formId: "1ead9dd9-b085-4fdd-a442-964cb9bced8e",
-      portalId: "7989919",
     },
   }
 
@@ -31,7 +29,7 @@ const contact =
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
     const {
-      cmsContact: { formSuccessMessage, formErrorMessage, formId, portalId },
+      cmsContact: { formSuccessMessage, formErrorMessage },
     } = contact
   
     return (
@@ -46,33 +44,15 @@ const contact =
               onSubmit={
                 (values, actions) => {
                   const isBrowser = typeof window !== "undefined"
-                  const hutk = isBrowser ? Cookies.get("hubspotutk") : null
                   const pageUri = isBrowser ? window.location.href : null
                   const pageName = isBrowser ? document.title : null
-                  const postUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`
+                  
   
                   setLoading(true)
   
-                  const body = {
-                    submittedAt: Date.now(),
-                    fields: [
-                      {
-                        name: "email",
-                        value: values.email,
-                      },
-                      {
-                        name: "message",
-                        value: values.message,
-                      },
-                    ],
-                    context: {
-                      hutk,
-                      pageUri,
-                      pageName,
-                    },
-                  }
+                  
   
-                  fetch(postUrl, {
+                  /* fetch(postUrl, {
                     method: "POST",
                     headers: new Headers({
                       "Content-Type": "application/json",
@@ -93,7 +73,7 @@ const contact =
                         setLoading(false)
                       })
                       .finally(() => actions.setSubmitting(false))
-                }
+                } */
               }
               validate={values => {
                 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
@@ -110,8 +90,7 @@ const contact =
   
             <Form name="contact"
                   className="contact-form"
-                  data-form-id={formId}
-                  data-portal-id={portalId}>
+                  data-netlify="true">
               <div className="invite">{t("invite" )}</div>
               {success && (
                   <div>
