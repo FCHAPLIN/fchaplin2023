@@ -27,7 +27,7 @@
 		"git":"Git",
 		"git-content":"Gitlab, GitHub",
 		"cloud":"Cloud",
-		"cloud-content":"AWS, GCP",
+		"cloud-content":"Azure, AWS, GCP",
 		"bdd":"Databases",
 		"bdd-content":"MongoDB, MySQL/MariaDB, PostGreSQL",
 		"cms":"CMS & eCommerce",
@@ -35,11 +35,13 @@
 		"front":"Javascript Front",
 		"front-content":"Angular, React, Vue, Svelte, Gatsby, Vanilla, SCSS, Progressive Web Apps, Electron",
 		"back":"Javascript Back",
-		"back-content":"NodeJS, ExpressJS, NestJS"
+		"back-content":"NodeJS, ExpressJS, NestJS",
+		"languages": "Other Languages",
+		"languages-content": "Python, PHP, C#"
 	},
 	"pricings": {
 		"title": "Rates",
-		"tjm": "My daily rate is around ",
+		"tjm": "My daily rates are between <strong>450€</strong> and <strong>600€</strong>.",
 		"text1": "This price is not fixed. Packages, for a website for example, can be offered. Variations may occur depending on the type of project, in the case of team management, depending on the duration and scope of the assignment.",
 		"text2": "The field and the purpose of the project can also influence the price, with possible reductions in favor of ecological, humanitarian or cultural projects.",
 		"text3": "What about starting by a chat about your project?"

@@ -2,7 +2,7 @@ import "./Skills.scss"
 import {useTranslations} from 'next-intl';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faJsSquare, faNode, faWordpress } from "@fortawesome/free-brands-svg-icons";
-import { faCheckCircle, faCloud, faCodeBranch, faDatabase, faHeart, faTasks } from "@fortawesome/free-solid-svg-icons";
+import { faCheckCircle, faCloud, faCodeBranch, faDatabase, faHeart, faTasks, faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = (props) => {
   const t = useTranslations('skills');
@@ -60,10 +60,17 @@ const Skills = (props) => {
               </article>
               <article className="skill">
                   <header></header>
+                  <div className="icon"><FontAwesomeIcon className="fas fa-lg" icon={faLaptopCode}/></div>
+                  <h3>{t("languages")}</h3>
+                  <p>{t("languages-content")}</p>
+              </article>
+              <article className="skill">
+                  <header></header>
                   <div className="icon"><FontAwesomeIcon className="fas fa-lg" icon={faHeart}/></div>
                   <h3>{t("soft")}</h3>
                   <p>{t("soft-content")}</p>
               </article>
+
           </div>
           <div className="anchor" id="contact-form"></div>
       </section>

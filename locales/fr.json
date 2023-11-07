@@ -27,7 +27,7 @@
     "git": "Git",
     "git-content": "Gitlab, GitHub",
     "cloud": "Cloud",
-    "cloud-content": "AWS, GCP",
+    "cloud-content": "Azure, AWS, GCP",
     "bdd": "Bases de données",
     "bdd-content": "MongoDB, MySQL/MariaDB, PostGreSQL",
     "cms": "CMS & eCommerce",
@@ -35,11 +35,13 @@
     "front": "Javascript Front",
     "front-content": "Angular, React, Vue, Svelte, Gatsby, Vanilla, SCSS, Progressive Web Apps, Electron",
     "back": "Javascript Back",
-    "back-content": "NodeJS, ExpressJS, NestJS"
+    "back-content": "NodeJS, ExpressJS, NestJS",
+    "languages": "Autres Langages",
+		"languages-content": "Python, PHP, C#"
   },
   "pricings": {
     "title": "Tarifs",
-    "tjm": "Mon tarif journalier moyen se situe entre 450€ et 600 €.",
+    "tjm": "Mon tarif journalier moyen se situe entre <strong>450€</strong> et <strong>600€</strong>.",
     "text1": "Des forfaits, pour un <strong>site internet</strong> par exemple, peuvent être proposés. Des variations peuvent s'opérer selon le type de projet, la durée, la portée de la mission et en cas de management d'une équipe.",
     "text2": "Le domaine et la finalité du projet de <strong>développement web</strong> peuvent aussi influer sur le prix, avec des réductions eventuelles en faveur des projets écologiques, humanitaires, ou culturels.",
     "text3": "Et si on commençait par une discussion autour de votre projet ?"

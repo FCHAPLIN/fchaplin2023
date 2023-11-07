@@ -4,6 +4,13 @@
   padding: 30px 20px 50PX;
   background: $white;
   color: $darkgrey;
+  .grid{
+    display: grid;
+    gap: 1rem 1rem;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
   .skill{
     text-align: center;
     header{
