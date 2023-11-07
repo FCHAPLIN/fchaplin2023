@@ -74,7 +74,7 @@ const contact =
                       })
                       .finally(() => actions.setSubmitting(false))
                 } */
-              }
+              }}
               validate={values => {
                 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
                 const errors = {}
