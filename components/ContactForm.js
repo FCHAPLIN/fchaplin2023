@@ -90,7 +90,7 @@ const contact =
   
             <Form name="contact"
                   className="contact-form"
-                  data-netlify="true">
+                  netlify>
               <div className="invite">{t("invite" )}</div>
               {success && (
                   <div>
