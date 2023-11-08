@@ -86,7 +86,8 @@
     "message": "Votre message",
     "messageError": "Vous n'avez pas tapé de message !",
     "back": "Retour à l'accueil",
-    "thanks": "Merci !"
+    "thanks": "Votre message a été envoyé, Merci !",
+    "issue": "Un probleme est survenu. Vous pouvez aussi me contacter par email : fredericchapin@gmail.com"
   },
   "footer": {
   }

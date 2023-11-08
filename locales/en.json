@@ -83,7 +83,8 @@
 		"message": "Your message",
 		"messageError": "You did not write any message!",
 		"back": "Back to Home",
-		"thanks" : "Thank you"
+		"thanks": "Your message was sent, Merci !",
+    "issue": "An issue occured. You can always send me an email: fredericchapin@gmail.com"
 	},
 	"site": {
 		"description": "Freelance Lead / Senior Fullstack Javascript developer near Montpellier (France), I build any website or web application. Contact me to create your architecture, testing, mentoring, PWA, technical debts audits."

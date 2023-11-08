@@ -1,15 +1,9 @@
 import { ErrorMessage, Field, Form, Formik, useField } from "formik";
 import { useTranslations } from "next-intl";
 import "./ContactForm.scss"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const contact =
-  {
-    cmsContact: {
-      formSuccessMessage: "Merci !",
-      formErrorMessage: "Un problème est survenu",
-    },
-  }
+
 
   const MyTextArea = ({label, ...props}) => {
     const [field, meta] = useField(props);
@@ -25,9 +19,16 @@ const contact =
   };
   const ContactForm = () => {
     const t = useTranslations('contact');
+    const contact = {
+      cmsContact: {
+        formSuccessMessage: t("thanks"),
+        formErrorMessage: t("issue"),
+      },
+    } 
     const [loading, setLoading] = useState(false)
     const [success, setSuccess] = useState(false)
     const [error, setError] = useState(false)
+    
     const {
       cmsContact: { formSuccessMessage, formErrorMessage },
     } = contact
@@ -36,29 +37,28 @@ const contact =
         <>
           <Formik
               initialValues={{
-                firstname: "",
-                lastname: "",
                 email: "",
                 message: "",
               }}
               onSubmit={
                 (values, actions) => {
-                  const isBrowser = typeof window !== "undefined"
-                  const pageUri = isBrowser ? window.location.href : null
-                  const pageName = isBrowser ? document.title : null
                   
-  
+                  
+                  
                   setLoading(true)
-  
+                  console.log(values)
+                  const formData = new FormData();
+                  formData.append('email', values.email);
+                  formData.append('message', values.message);
                   
   
-                  /* fetch(postUrl, {
+                  fetch('/', {
                     method: "POST",
                     headers: new Headers({
-                      "Content-Type": "application/json",
+                      "Content-Type": "application/x-www-form-urlencoded",
                       Accept: "application/json, application/xml, text/plain, text/html, *.*",
                     }),
-                    body: JSON.stringify(body),
+                    body: new URLSearchParams(formData).toString(),
                   })
                       .then(res => res.json())
                       .then(() => {
@@ -73,8 +73,8 @@ const contact =
                         setLoading(false)
                       })
                       .finally(() => actions.setSubmitting(false))
-                } */
-              }}
+                } 
+              }
               validate={values => {
                 const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
                 const errors = {}
@@ -90,6 +90,7 @@ const contact =
   
             <Form name="contact"
                   className="contact-form"
+                  id="contact-form"
                   netlify>
               <div className="invite">{t("invite" )}</div>
               {success && (
