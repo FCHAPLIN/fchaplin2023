@@ -93,6 +93,7 @@
   }
   &_arrow-down{
     cursor: pointer;
+    color: $white;
     position: absolute;
     padding: 0.5rem;
     animation-name: arrowBounce;
