@@ -1,6 +1,7 @@
 @import "../styles/variables";
 
 .contact{
+  min-height: calc(100vh - 329px);
   h2 {
     margin-top: 0;
     font-weight: normal;

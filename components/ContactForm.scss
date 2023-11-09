@@ -3,6 +3,7 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+  
   .invite{
     text-align: center;
     width: 100%;
@@ -17,11 +18,14 @@
     max-width: 320px;
     margin-bottom: 0.5rem;
     .error-message{
-      padding: 0.2rem;
-      font-size: 0.8rem;
-      color: #de5e5e;
+      padding: 0rem;
+      font-size: 1rem;
+      color: #df9696;
       width: 100%;
       max-width: 320px;
+    }
+    .success-message {
+
     }
     .label{
       width: 100%;
