@@ -53,8 +53,15 @@
   }
   &_image{
     width: 180px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in-out;
     @media screen AND (min-width: 769px) {
       width: 300px;
+    }
+    &:hover{
+      transform:rotate3d(2, 0, 0, -360deg);
+      
     }
   }
   &_call-to-action{

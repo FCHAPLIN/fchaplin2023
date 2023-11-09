@@ -31,18 +31,17 @@ export default function Header({ title, locale }) {
         <div className="header_menu">
           <Link className="header_link" href="#services"
                 title={t('nav.services')}>{t('nav.services')}</Link>
-          <Link  className="header_link" href="#rates"
-                title={t('nav.rates')}>{t('nav.rates')}</Link>
           <Link  className="header_link" href="#skills"
                 title={t('nav.skills')}>{t('nav.skills')}</Link>
           <Link className="header_link" href="#contact-form"
                 title={t('nav.contact')}>{t('nav.contact')}</Link>
+        <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact" )}
+                  href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
         </div>
+        
         <div className="header_lang-menu">
           <LanguageMenu locale={locale}/>
         </div>
-        <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact" )}
-                  href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
 
         <div role="button" tabIndex={0} aria-label="Close" className="header_menu-close-button"
              onKeyDown={() => setShowMenu(!showMenu)}
@@ -59,9 +58,6 @@ export default function Header({ title, locale }) {
             <div  className="header_link" role="button" tabIndex={0}
                   onKeyDown={() => scrollTo('#services')}
                   onClick={() => scrollTo('#services')}>{t("nav.services")}</div>
-            <div  className="header_link" role="button" tabIndex={0}
-                  onKeyDown={() => scrollTo('#rates')}
-                  onClick={() => scrollTo('#rates')}>{t("nav.rates")}</div>
             <div  className="header_link" role="button" tabIndex={0}
                   onKeyDown={() => scrollTo('#skills')}
                 onClick={() => scrollTo('#skills')}>{t("nav.skills")}</div>

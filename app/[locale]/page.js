@@ -47,7 +47,6 @@ export default function Index({locale}) {
         <Header title={t('title')} locale={locale} />
         <Hero/>
         <Services/>
-        <Rates/>
         <Skills/>
         <Contact/>
       </main>

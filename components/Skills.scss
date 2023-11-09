@@ -1,9 +1,18 @@
 @import "../styles/variables";
 
 .skills{
+  position:relative;
   padding: 30px 20px 50PX;
   background: $white;
   color: $darkgrey;
+  &:before{
+    content:'';
+    position:absolute;
+    top:-3px;
+    left: 25%;
+    width: 50%;
+    border-top: 3px solid $lightgrey;
+  }
   .grid{
     display: grid;
     gap: 1rem 1rem;
@@ -13,6 +22,12 @@
   
   .skill{
     text-align: center;
+    &:hover{
+      .icon{
+        font-size: 3rem;
+        transform: rotate(720deg);
+      }
+    }
     header{
       margin: 0 auto;
       width: 40px;
@@ -31,7 +46,12 @@
       justify-content: center;
       color: $white;
       margin: 0 auto;
-      font-size: 3rem;
+      font-size: 2rem;
+      transition-property: "font-size", transform;
+      transition-duration: 400ms;
+      transition-timing-function: ease-in-out;
+      transform: rotate(0deg);
+      
     }
     h3{
       text-transform: uppercase;
@@ -39,7 +59,6 @@
     }
   }
   h2 {
-    margin-top: 0;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 2rem;

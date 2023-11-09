@@ -41,6 +41,7 @@
 
 
   .service {
+    
     width: 100%;
     border: 1px #DDD solid;
     background-color: $cards-background;
@@ -48,7 +49,20 @@
     font-size: 120%;
     overflow: hidden;
     margin-bottom: 20px;
-    box-shadow: 5px 5px 10px darken($lightgrey, 10%);
+    transform: translate3d(0px, 0px, 0px);
+    box-shadow: 3px 3px 5px darken($lightgrey, 10%);
+    transition-property: transform, box-shadow, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &:hover{
+      transform: translate3d(-5px, -5px, 0px);
+      box-shadow: 8px 8px 10px darken($lightgrey, 10%);
+      background-color: lighten($cards-background, 80%);
+      .service_cover{
+        width: 110%;
+        margin-left: -5%;
+      }
+    }
     &_title{
       text-align: center;
       margin-top: 5px;
@@ -65,10 +79,13 @@
     }
     &_cover{
       width: 100%;
+      margin-left: 0%;
       height: 140px;
       background-size: cover;
       background-position: center;
-
+      transition-property: width, margin;
+      transition-duration: 0.2s;
+      transition-timing-function: ease-in-out;
     }
     &_content{
       padding: 20px;

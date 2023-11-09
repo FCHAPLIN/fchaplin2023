@@ -86,7 +86,7 @@ const Services = () => {
                     </article>
                 </div>
             </div>
-            <div className="anchor" id="rates"></div>
+            <div className="anchor" id="skills"></div>
         </section>
   )
 }
