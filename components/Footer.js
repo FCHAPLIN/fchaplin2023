@@ -1,4 +1,4 @@
-import { faLinkedin, faSkype, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faGitlab, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -19,13 +19,13 @@ export default function Footer() {
       </div>
       <div className="social">
           <div>
-              <a className="footer-link" title="skype" target="_blank" rel="noopener noreferrer" href="https://join.skype.com/invite/jh6d0ehn7pC0">
-              <FontAwesomeIcon className="fas fa-lg" icon={faSkype}/>
+              <a className="footer-link" title="skype" target="_blank" rel="noopener noreferrer" href="https://web.whatsapp.com/send/?phone=33663771374">
+              <FontAwesomeIcon className="fas fa-lg" icon={faWhatsapp}/>
               </a>
           </div>
           <div>
-          <a className="footer-link" title="twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/fredchaplin">
-            <FontAwesomeIcon className="fas fa-lg" icon={faTwitter}/>
+          <a className="footer-link" title="gitlab" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/FCHAPLIN">
+            <FontAwesomeIcon className="fas fa-lg" icon={faGitlab}/>
           </a>
         </div>
         <div>

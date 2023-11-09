@@ -4,7 +4,7 @@ import { useCallback } from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import Link from "next/link";
 import {useTranslations} from 'next-intl';
-import { faSkype } from '@fortawesome/free-brands-svg-icons';
+import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { loadFull } from "tsparticles"; 
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -35,11 +35,11 @@ const Hero = () => {
                 </div>
                 <div className="hero_call-to-action">
                     <div className="hero_call-button">
-                        <a title="skype" target="_blank" rel="noopener noreferrer" href="https://join.skype.com/invite/jh6d0ehn7pC0"
+                        <a title="whatsapp" target="_blank" rel="noopener noreferrer" href="https://web.whatsapp.com/send/?phone=33663771374"
                            role="button"
                            onKeyDown={onClick}
                            onClick={onClick}>
-                            <FontAwesomeIcon className="fas fa-lg" icon={faSkype}/>
+                            <FontAwesomeIcon className="fas fa-lg" icon={faSquareWhatsapp}/>
                         </a>
                     </div>
                     <div className="hero_call-text">{t('callText')}</div>
@@ -357,9 +357,9 @@ const Hero = () => {
                             }
                           }} />
             </div>
-            <Link className="hero_arrow-down" href="/#services">
+            <a className="hero_arrow-down" href="#services">
                 <FontAwesomeIcon className="fas fa-lg" icon={faChevronDown}/>
-            </Link>
+            </a>
             <div className="anchor" id="services"></div>
         </section>
         

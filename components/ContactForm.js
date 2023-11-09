@@ -40,6 +40,7 @@ const ContactForm = () => {
             console.log(error);
             this.loading = false;
             setError(true);
+            setSuccess(false);
           })
         } else {
           setLoading(false);
