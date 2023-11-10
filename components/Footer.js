@@ -19,7 +19,7 @@ export default function Footer() {
       </div>
       <div className="social">
           <div>
-              <a className="footer-link" title="skype" target="_blank" rel="noopener noreferrer" href="https://web.whatsapp.com/send/?phone=33663771374">
+              <a className="footer-link" title="skype" target="_blank" rel="noopener noreferrer" href="https://wa.me/133663771374">
               <FontAwesomeIcon className="fas fa-lg" icon={faWhatsapp}/>
               </a>
           </div>
