@@ -17,7 +17,10 @@
     display: grid;
     gap: 1rem 1rem;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    @media screen AND (min-width: 769px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
   
   .skill{

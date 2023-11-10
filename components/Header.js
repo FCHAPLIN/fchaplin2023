@@ -55,15 +55,9 @@ export default function Header({ title, locale }) {
           <div role="button" tabIndex={0} className={"header_menu-mobile-buttons"}
                onKeyDown={() => setShowMenu(false)}
                onClick={() => setShowMenu(false)}>
-            <div  className="header_link" role="button" tabIndex={0}
-                  onKeyDown={() => scrollTo('#services')}
-                  onClick={() => scrollTo('#services')}>{t("nav.services")}</div>
-            <div  className="header_link" role="button" tabIndex={0}
-                  onKeyDown={() => scrollTo('#skills')}
-                onClick={() => scrollTo('#skills')}>{t("nav.skills")}</div>
-            <div  className="header_link" role="button" tabIndex={0}
-                  onClick={() => scrollTo('#contact-form')}
-                  onKeyDown={() => scrollTo('#contact-form')}>{t("nav.contact")}</div>
+            <a  className="header_link" href="#services">{t("nav.services")}</a>
+            <a  className="header_link" href="#skills">{t("nav.skills")}</a>
+            <a  className="header_link" href="#contact-form">{t("nav.contact")}</a>
               <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact")}
                   href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
     
