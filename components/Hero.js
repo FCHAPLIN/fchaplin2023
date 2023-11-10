@@ -35,7 +35,7 @@ const Hero = () => {
                 </div>
                 <div className="hero_call-to-action">
                     <div className="hero_call-button">
-                        <a title="whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/133663771374"
+                        <a title="whatsapp" target="_blank" rel="noopener noreferrer" href="https://wa.me/33663771374"
                            role="button"
                            onKeyDown={onClick}
                            onClick={onClick}>
