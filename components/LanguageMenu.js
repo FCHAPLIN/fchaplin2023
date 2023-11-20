@@ -1,9 +1,8 @@
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import "./LanguageMenu.scss"
-import { useRouter } from 'next-intl/client';
-import { usePathname } from 'next-intl/client';
-import { useSearchParams } from 'next/navigation';
+import {useRouter} from '../navigation';
+import {usePathname} from '../navigation';
 import { useParams } from 'next/navigation'
 
 const LanguageMenu = () => {

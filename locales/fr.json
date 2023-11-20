@@ -10,12 +10,17 @@
     "rates": "Tarifs",
     "skills": "Compétences",
     "resume": "CV",
-    "contact": "Contact"
+    "contact": "Contact",
+    "home": "Accueil",
+		"projects": "Projets"
   },
   "hero": {
     "developer": "Développeur Fullstack Web freelance",
     "callText": "On parle de votre projet ?"
   },
+  "projects": {
+		"title": "Projects"
+	},
   "skills": {
     "title": "Compétences",
     "soft": "Soft Skills",

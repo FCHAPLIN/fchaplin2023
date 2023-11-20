@@ -1,3 +1,4 @@
+'use client'
 import { faGitlab, faLinkedin, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";

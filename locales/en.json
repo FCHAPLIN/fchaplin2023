@@ -10,7 +10,12 @@
 		"rates": "Rates",
 		"skills": "Skills",
 		"resume": "Resume",
-		"contact": "Contact"
+		"contact": "Contact",
+		"home": "Home",
+		"projects": "Projects"
+	},
+	"projects": {
+		"title": "Projects"
 	},
 	"hero": {
 		"developer": "Lead fullstack web developer freelance",

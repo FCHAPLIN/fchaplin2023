@@ -1,3 +1,4 @@
+'use client'
 import React, { useCallback, useState } from "react"
 import "./Header.scss"
 import "../styles/global.scss"
@@ -22,18 +23,22 @@ export default function Header({ title, locale }) {
 
   return (
     <header className="header">
-      <Link className="logo-container" href="#top">
+      <Link className="logo-container" href="/home/#top">
           <div className="header_logo" title="Top">
             <img src="/img/logo.png" width="50" height="50" alt="logo"></img>
           </div >
       </Link>
       <div className="header_container">
         <div className="header_menu">
-          <Link className="header_link" href="#services"
+          <Link className="header_link" href="/home#top"
+                title={t('nav.home')}>{t('nav.home')}</Link>
+          <Link className="header_link" href="/home#services"
                 title={t('nav.services')}>{t('nav.services')}</Link>
-          <Link  className="header_link" href="#skills"
+          <Link className="header_link" href="/home#skills"
                 title={t('nav.skills')}>{t('nav.skills')}</Link>
-          <Link className="header_link" href="#contact-form"
+          <Link className="header_link" href="/projects"
+                title={t('nav.projects')}>{t('nav.projects')}</Link>
+          <Link className="header_link" href="/home#contact-form"
                 title={t('nav.contact')}>{t('nav.contact')}</Link>
         <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact" )}
                   href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
@@ -55,12 +60,11 @@ export default function Header({ title, locale }) {
           <div role="button" tabIndex={0} className={"header_menu-mobile-buttons"}
                onKeyDown={() => setShowMenu(false)}
                onClick={() => setShowMenu(false)}>
-            <a  className="header_link" href="#services">{t("nav.services")}</a>
-            <a  className="header_link" href="#skills">{t("nav.skills")}</a>
-            <a  className="header_link" href="#contact-form">{t("nav.contact")}</a>
-              <a  className="header_link" role="button" tabIndex={0} title={t("nav.contact")}
-                  href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
-    
+            <a className="header_link" href="/home#top">{t('nav.home')}</a>
+            <a className="header_link" href="/home#services">{t("nav.services")}</a>
+            <a className="header_link" href="/home#skills">{t("nav.skills")}</a>
+            <a className="header_link" href="/home#contact-form">{t("nav.contact")}</a>
+            <a className="header_link" href={getCV()} target="_blank" rel="noreferrer">{t("nav.resume")}</a>
           </div>
         </div>
       </div>

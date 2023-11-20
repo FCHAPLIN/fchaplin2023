@@ -1,8 +1,9 @@
+'use client'
+
 import Particles from "react-particles";
 import "./Hero.scss"
 import { useCallback } from "react";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import Link from "next/link";
 import {useTranslations} from 'next-intl';
 import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { loadFull } from "tsparticles"; 
