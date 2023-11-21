@@ -38,6 +38,13 @@
       margin-top: 1rem;
     }
   }
+  
+  &_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &_title {
     font-size: 1.8rem;
 
@@ -67,3 +74,35 @@
     background: #055d6d;
   }
 }
+
+.project{
+  &_date {
+    padding: 2rem;
+    display:flex;
+    font-size: 3rem;
+    justify-content: flex-start;
+    width: 33%;
+  }
+
+    &_select {
+      font-size: 2rem!important;
+      color: $white!important;
+    }
+
+  &_select-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
+    padding: 2rem;
+    display: flex;
+    color: $white;
+    font-size: 2rem;
+  }
+
+  &_title {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+  }
+}
+
