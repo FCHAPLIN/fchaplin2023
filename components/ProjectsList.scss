@@ -75,17 +75,11 @@
   }
 }
 
-.project{
-  &_date {
-    padding: 2rem;
-    display:flex;
-    font-size: 3rem;
-    justify-content: flex-start;
-    width: 33%;
-  }
+.projects{
+  
 
     &_select {
-      font-size: 2rem!important;
+      font-size: 1.6rem!important;
       color: $white!important;
     }
 
@@ -101,8 +95,59 @@
 
   &_title {
     display: flex;
-    justify-content: center;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 33%;
+  }
+}
+
+.project{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 3rem;
+  header{
+    width: 30%;
+  }
+  main{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  &_date {
+    display:flex;
+    font-size: 3rem;
+    font-weight: 200;
+    justify-content: flex-start;
+  }
+  &_title {
+    padding: 0rem;
+    margin: 0;
+    display:flex;
+    font-size: 3rem;
+    font-weight: 900;
+    justify-content: flex-start;
+  }
+  &_company {
+    padding: 0rem;
+    margin: 0;
+    display:flex;
+    font-size: 1.5rem;
+    font-weight: 200;
+    justify-content: flex-start;
+  }
+  &_text {
+    width: 100%;
+    margin: 0;
+    display:flex;
+    font-size: 1.2rem;
+    font-weight: 200;
+    justify-content: flex-start;
+  }
+  &_image{
+    max-width: 100%;
+    margin-right: -2rem;;
   }
 }
 

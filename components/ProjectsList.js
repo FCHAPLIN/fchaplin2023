@@ -345,13 +345,13 @@ const ProjectsList = (props) => {
         }}
       />
       <header className="projects_header">
-        <div className="project_date">{selectedProject.date}</div>
+        
         <h1 className="projects_title">
           Projects <span className="projects_subtitle">Explorer</span>
         </h1>
-        <div className="project_select-container">
+        <div className="projects_select-container">
           <Select
-            className="project_select"
+            className="projects_select"
             value={selectedProject.id}
             onChange={(e) => handleChange(e)}
             disableUnderline
@@ -366,9 +366,18 @@ const ProjectsList = (props) => {
           </Select>
         </div>
       </header>
-      <main>
-        <div>{selectedProject.title}</div>
-      </main>
+      <article className="project">
+        <header>
+          <div className="project_date">{selectedProject.date}</div>
+          <h2 className="project_title">{selectedProject.title}</h2>
+          <p className="project_company">{selectedProject.company}</p>
+          <p className="project_text">{selectedProject.description}</p>
+        </header>
+        <main>
+          <img className="project_image" src={`/img${selectedProject.images[0]}`}></img>
+          
+        </main>
+      </article>
     </section>
   );
 };

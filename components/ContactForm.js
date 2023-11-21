@@ -74,7 +74,7 @@ const ContactForm = () => {
       )}
       {(!success || errors) && (
         <>
-          <div classinName="field-contaer">
+          <div className="field-container">
             <label className="label" htmlFor="email">
               {t("email")}{" "}
             </label>

@@ -31,7 +31,7 @@ const ProjectsPage = ({ data }) => {
       company: "Diadao",
       companyURL: "https://www.diadao.fr/fr/agence-digitale-communication-montpellier",
       techs: "HTML5, JQUERY, CSS3, PHP, SQL",
-      images: ["/url1", "/url1", "/url3"],
+      images: ["/hotel.png", "/url1", "/url3"],
       links: [{
         url: "https://www.lecastellas.com/fr/chambre-hotel-pont-du-gard",
         label: "Le Castellas",
@@ -61,11 +61,11 @@ const ProjectsPage = ({ data }) => {
     },
     {
       id: 5,
-      title: "Cloud Authoring, Cloud Connect, Cloud Reader",
+      title: "Cloud Authoring & Reader",
       company: "Rakuten Aquafadas",
       companyURL: "https://global.rakuten.com/corp",
       techs: "HTML5, ANGULAR, CSS3, PHP, ELECTRON, IONIC, GOOGLE CLOUD, SQL",
-      images: ["/url1", "/url1", "/url3"],
+      images: ["/cloudAuthoring.jpg", "/url1", "/url3"],
       links: [],
       description: "test",
       date: 2018,
@@ -87,7 +87,7 @@ const ProjectsPage = ({ data }) => {
       company: "Kenpath",
       companyURL: "https://kenpath.com/",
       techs: "ANGULAR, NODEJS, EXPRESS, MONGODB",
-      images: ["/url1", "/url1", "/url3"],
+      images: ["/kenpath1.png", "/url1", "/url3"],
       link: [
         {
           url: "https://app.kenpath.com/login",
@@ -103,7 +103,7 @@ const ProjectsPage = ({ data }) => {
       company: "Invivo Digital Factory",
       companyURL: "https://www.invivo-group.com/fr/innovation-digital/solutions-digitales",
       techs: "VUE, NODEJS, HAPI, SQL",
-      images: ["/url1", "/url1", "/url3"],
+      images: ["/aladinfarm.png", "/url1", "/url3"],
       link: [
         {
           url: "https://www.aladin.farm/",
@@ -119,7 +119,7 @@ const ProjectsPage = ({ data }) => {
       company: "Eminence",
       companyURL: "https://www.eminence.fr",
       techs: "ANGULAR, PHP, NWjs",
-      images: ["/url1", "/url1", "/url3"],
+      images: ["/eminence.png", "/url1", "/url3"],
       link: [],
       description: "test",
       date: 2023,
